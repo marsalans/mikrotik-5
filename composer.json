@@ -1,6 +1,6 @@
 {
   "name": "wesleydeveloper/mikrotik",
-  "description": "A mikrotik",
+  "description": "A mikrotik api for laravel",
   "license": "MIT",
   "keywords": [
     "mikrotik"
@@ -8,8 +8,8 @@
   "type": "library",
   "authors": [
     {
-      "name": "",
-      "email": ""
+      "name": "Wesley Silva",
+      "email": "wesley_silva@outlook.com"
     }
   ],
   "require": {
@@ -40,7 +40,10 @@
     "laravel": {
       "providers": [
         "Wesleydeveloper\\Mikrotik\\ServiceProvider"
-      ]
+      ],
+      "aliases": {
+        "Mikrotik": "Wesleydeveloper\\Mikrotik\\Facades\\Mikrotik"
+      }
     }
   },
   "config": {
